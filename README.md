@@ -18,7 +18,7 @@
 
 ### 项目目录
 
-`
+```
 ├── .vscode
 ├── node_modules
 ├── public
@@ -46,4 +46,4 @@
 ├── README.md
 └── yarn.lock
 
-`
+```
