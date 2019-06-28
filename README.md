@@ -13,21 +13,21 @@
 │ ├── favicon.ico
 │ └── index.html
 ├── src
-│ ├── api
-│ ├── app
-│ ├── assets
-│ ├── components
-│ ├── images
-│ ├── layout
-│ ├── router
-│ ├── store
-│ ├── theme
-│ ├── utils
-│ ├── views
+│ ├── api                            // 接口调用
+│ ├── app                            // 登录 404
+│ ├── assets                         // 静态资源
+│ ├── components                     // 公共组件
+│ ├── images                         // 图片
+│ ├── layout                         // layout布局
+│ ├── router                         // 动态路由配置
+│ ├── store                          // redux
+│ ├── theme                          // 配置皮肤，需要的自己搞
+│ ├── utils                          // 公共方法
+│ ├── views                          // 单页应用
 │ ├── App.js
 │ └── index.js
-├── .env.development
-├── .env.production
+├── .env.development                 // 开发接口
+├── .env.production                  // 生产接口
 ├── .eslintignore
 ├── config-coverrides.js
 ├── package.json
