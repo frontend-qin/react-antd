@@ -8,7 +8,9 @@
 
 ```
 ├── .vscode
+├── build                             正式服务器包
 ├── config                            webpack配置文件
+├── devbuild                          测试服务器包
 ├── node_modules
 ├── public
 │ ├── favicon.ico
@@ -75,27 +77,78 @@ This will automatically open http://localhost:9527
 # 配合 redux 使用的，同上方式调用
 ```
 
+## css 预编译语言
+
+```bash
+## 样式选择的less语法，项目已做过配置，你可以直接写 .less 文件
+
+```
+
 ## Build
+
+<a href="https://www.html.cn/create-react-app/docs/advanced-configuration/">
+    Create React App 环境配置
+</a>
 
 ```bash
 
 # build for production environment(正式服务器包)
-# 正式打包后的包名是build，如需要更改，请在config文件下的 paths.js 中修改 appBuild 属性的值
+
+# 正式打包后的包名是 build，如需要更改，请在 config 文件下的 paths.js 中修改 appBuild 属性的值
+# 打正式包的时候，记得修改 .env.production 文件下的 路径为正式服务器地址
 npm run build
 
 # build for test environment(打测试服务器包)
-# 测试打包后的包名是devbuild
+
+# 测试打包后的包名是 devbuild
+# 记得修改 .env.development 文件下的 路径为测试服务器
+
 npm run devbuild
 
+# 运行查看正式包(看控制台环境)
+serve -s build
+
+#运行查看测试包(看控制台环境)
+serve -s devbuild
+
+#serve 找不到的 ，请先全局安装它
+npm i serve -g
+
 # 测试 test todo....
+
 npm run test
+
+# 关于配置跨域代理问题，自己在 packaje.json 中 配置 proxy
+
+# 关于当前的环境和 接口地址查看，请直接打开控制台，运行不同的包查看
+# 打印 process.env 的值查看
+
+```
+
+## 配置菜单
+
+```bash
+
+## 路由菜单统一 递归函数处理，只需要配置你的路由菜单就可以了
+
+## 在左侧菜单中显示的路由，全部配置在 router 文件下的 menuList.js 中的 routeList 数组中
+
+## 如果不需要再左侧显示 配置在 privateRoute 数组中，比如说个人中心，修改密码，头像修改
+
+```
+
+## 配置皮肤
+
+```bash
+## 请自己在 theme 文件下创建 配置
+
 ```
 
 ## Eslint todo...
 
 ```bash
 
-## 需要配置eslint的
+## 需要配置eslint
 
 ```
 
