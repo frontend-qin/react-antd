@@ -2,13 +2,13 @@ import React, { PureComponent } from 'react'
 import { Layout, Icon, Menu, Dropdown, Avatar, Badge, Breadcrumb } from 'antd'
 import { connect } from 'react-redux'
 import './index.less'
-import { collSpanAction } from '@store/actions'
+import { collSpanAction } from './../../store/actions'
 import { withRouter } from 'react-router-dom'
-import { changeRoute, clearTags } from '@/store/actions'
-import store from '@/store'
+import { changeRoute, clearTags } from './../../store/actions'
+import store from './../../store'
 const { Header } = Layout
 
-const avator = require('@/images/1.jpg')
+const avator = require('./../../images/1.jpg')
 
 class AppHeader extends PureComponent {
   clickHandle = ({ key, domEvent }) => {

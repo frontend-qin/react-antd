@@ -1,5 +1,27 @@
 .sidebar {
-  height: 100vh;
+  height: calc(100vh - 64px);
+}
+.logo {
+  height: 64px;
+  background-color: #fff;
+  border-right: 1px solid #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      margin-top: 8px;
+      color: #1890ff;
+    }
+    img {
+      width: 45px;
+      margin-left: 8px;
+      padding-right: 10px;
+    }
+  }
 }
 .ant-layout-sider {
   background-color: #fff;
@@ -9,7 +31,7 @@ li.ant-menu-item {
 }
 li.ant-menu-item:hover {
   a.link {
-    color: #1da57a;
+    color: #1890ff;
   }
 }
 a.link {

@@ -4,7 +4,7 @@ import {
   CHANGEKEY,
   REMOVETAG,
   CLEARTAGS
-} from '@store/constant'
+} from './../../constant'
 
 const initState = {
   collSpan: false,

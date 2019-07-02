@@ -5,3 +5,4 @@ import reducers from './reducers'
 const store = createStore(reducers, composeWithDevTools(applyMiddleware()))
 
 export default store
+// #1890ff

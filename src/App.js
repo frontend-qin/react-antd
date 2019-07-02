@@ -3,7 +3,7 @@ import React from 'react'
 import { Provider } from 'react-redux'
 import store from './store'
 import AppRouter from './router'
-import './assets/styles/common.less'
+import './styles/common.less'
 
 console.log(process.env)
 

@@ -67,4 +67,5 @@ class LoginForm extends PureComponent {
   }
 }
 const Login = Form.create({ name: 'normal_login' })(LoginForm)
+
 export default Login

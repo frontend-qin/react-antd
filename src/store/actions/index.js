@@ -4,7 +4,7 @@ import {
   CHANGEKEY,
   REMOVETAG,
   CLEARTAGS
-} from '@/store/constant'
+} from './../../store/constant'
 
 export const collSpanAction = () => ({ type: COLLSPAN })
 

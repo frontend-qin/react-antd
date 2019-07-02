@@ -1,6 +1,5 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-// import { NotFound } from '@/app/index'
 import { routeList, privateRoute } from './menuList'
 import Layout from '@/layout'
 import Loadable from 'react-loadable'
@@ -8,11 +7,11 @@ import { Spin } from 'antd'
 const loading = () => <Spin />
 
 const Login = Loadable({
-  loader: () => import('@/app/login'),
+  loader: () => import('@/components/login'),
   loading
 })
 const NotFound = Loadable({
-  loader: () => import('@/app/not_found'),
+  loader: () => import('@/components/not_found'),
   loading
 })
 
