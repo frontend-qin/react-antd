@@ -1,8 +1,15 @@
-## 简化版 react-admin-antd
+## 简化版 react-antd
 
 <p align="center">
   <img width="900" src="./src/images/demo.jpg">
 </p>
+
+## 技术选择
+
+```
+react + antd + react-router-dom + redux
+
+```
 
 ## 项目目录
 
