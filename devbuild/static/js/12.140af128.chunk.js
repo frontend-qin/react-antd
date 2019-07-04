@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[12],{892:function(e,s,n){"use strict";n.r(s);var i=n(1),t=n.n(i);s.default=(()=>t.a.createElement("div",{__source:{fileName:"C:\\Users\\11\\Desktop\\react-antd-admin\\src\\views\\setting\\index.js",lineNumber:3},__self:void 0},"\u8bbe\u7f6e\u4e2d\u5fc3"))}}]);
+//# sourceMappingURL=12.140af128.chunk.js.map

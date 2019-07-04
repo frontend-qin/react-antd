@@ -49,10 +49,10 @@
 
 ```bash
 # clone the project
-git clone https://github.com/frontend-qin/react-antd-admin.git
+git clone https://github.com/frontend-qin/react-antd.git
 
 # enter the project directory
-cd react-antd-admin
+cd react-antd
 
 # install dependency
 yarn install

@@ -3,7 +3,7 @@ import { myTest } from '@/api/login'
 
 class Tables extends PureComponent {
   componentDidMount() {
-    myTest().then(res => {
+     myTest().then(res => {
       console.log(res)
     })
   }
