@@ -7,7 +7,8 @@ import { withRouter, NavLink } from 'react-router-dom'
 import { changeRoute } from '@store/actions'
 const { Sider } = Layout
 const { SubMenu } = Menu
-// 递归数据
+
+// 递归菜单数据
 function renderMenu(data) {
   return data.map(item => {
     if (item.children) {
@@ -19,7 +20,7 @@ function renderMenu(data) {
               <span>{item.title}</span>
             </span>
           }
-          key={item.path}
+          key={item.title}
         >
           {renderMenu(item.children)}
         </SubMenu>
@@ -89,6 +90,9 @@ const mapDispatchToProps = dispatch => {
   return {
     menuHandleClick({ key, domEvent }) {
       let title = domEvent.target.innerText
+      // 存储数据(开发完后干掉) todo 。。。。
+      localStorage.setItem('path', key)
+      localStorage.setItem('title', title)
       dispatch(changeRoute({ title, key }))
     }
   }

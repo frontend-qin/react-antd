@@ -1,5 +1,5 @@
 {
-  "name": "cryptoManager",
+  "name": "react-antd",
   "version": "0.1.0",
   "homepage": "./",
   "private": true,
@@ -74,6 +74,7 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
+    "devbuild": "node scripts/devbuild.js",
     "test": "node scripts/test.js"
   },
   "eslintConfig": {

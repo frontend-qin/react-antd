@@ -19,9 +19,37 @@
   margin: 0;
 }
 
-// container
-.home {
+.common {
   width: 100%;
   background-color: #fff;
-  min-height: 85vh;
+  min-height: calc(85vh + 12px);
+  box-shadow: 1px 1px 20px 5px #ccc;
+  border-radius: 3px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+// 输入框的样式
+.input_box {
+  margin: 15px 0;
+  line-height: 30px;
+  .input_text {
+    width: 200px;
+  }
+  .label,
+  .input_text {
+    float: left;
+  }
+}
+.two_row {
+  display: flex;
+}
+.btn_search {
+  margin-left: 15px;
+}
+
+// 按钮的盒子
+.btn-box {
+  .ant-btn {
+    margin: 0 10px;
+  }
 }

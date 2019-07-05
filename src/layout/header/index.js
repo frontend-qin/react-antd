@@ -18,6 +18,8 @@ class AppHeader extends PureComponent {
       this.props.history.push(key)
     } else {
       store.dispatch(clearTags())
+      localStorage.removeItem('path')
+      localStorage.removeItem('title')
       this.props.history.push('/login')
     }
   }
