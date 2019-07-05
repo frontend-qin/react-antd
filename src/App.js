@@ -5,8 +5,6 @@ import store from './store'
 import AppRouter from './router'
 import './styles/common.less'
 
-console.log(process.env)
-
 const App = () => (
   <Provider store={store}>
     <AppRouter />

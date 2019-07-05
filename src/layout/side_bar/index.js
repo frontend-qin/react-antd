@@ -15,7 +15,7 @@ function renderMenu(data) {
         <SubMenu
           title={
             <span>
-              <Icon type="mail" />
+              <Icon type={item.icon} />
               <span>{item.title}</span>
             </span>
           }
@@ -28,7 +28,7 @@ function renderMenu(data) {
     return (
       <Menu.Item title={item.title} key={item.path}>
         <NavLink to={item.path} className="link">
-          <Icon type="inbox" />
+          {item.icon ? <Icon type={item.icon} /> : null}
           <span>{item.title}</span>
         </NavLink>
       </Menu.Item>
@@ -41,6 +41,7 @@ const SideBar = props => {
 
   return (
     <div>
+      {/* 顶部logo */}
       <div
         className="logo"
         style={collSpan ? { width: 55 } : { width: '100%' }}
@@ -58,7 +59,7 @@ const SideBar = props => {
               src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg"
               alt="icon"
             />
-            <h1>React-Antd</h1>
+            <h1>SZHB-Admin</h1>
           </div>
         )}
       </div>

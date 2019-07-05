@@ -1,3 +1,4 @@
+@import './../../theme/index.less';
 .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab {
   height: 35px;
   padding: 0 16px;
@@ -23,10 +24,11 @@
 }
 // 选中的状态
 .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab-active {
-  background-color: #e6f7ff !important;
+  background-color: @navcolor !important;
+  color: @3f;
 }
 .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab .ant-tabs-close-x {
-  color: #1890ff;
+  color: #666;
 }
 .ant-tabs-nav-scroll {
   background-color: #fcfcfc;

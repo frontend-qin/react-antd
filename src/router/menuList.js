@@ -8,28 +8,67 @@ export const routeList = [
   {
     title: '首页',
     path: '/home',
+    icon: 'home',
     component: Loadable({
       loader: () => import('@/views/home'),
       loading
     })
   },
   {
-    title: '练习生',
-    path: '/soice',
-    component: Loadable({
-      loader: () => import('@/views/tables'),
-      loading
-    })
-  },
-  {
-    title: '表单',
-    path: 'form',
+    title: '用户管理',
+    path: 'user',
+    icon: 'user',
     children: [
       {
-        title: '表单1',
-        path: '/form/tables',
+        title: '添加用户',
+        path: '/user/addUser',
         component: Loadable({
-          loader: () => import('@/views/form'),
+          loader: () => import('@/views/userManger/users'),
+          loading
+        })
+      }
+    ]
+  },
+  {
+    title: '资源管理',
+    path: 'source',
+    icon: 'radar-chart',
+    children: [
+      {
+        title: '比特币资源',
+        path: '/source/btb',
+        component: Loadable({
+          loader: () => import('@/views/userManger/users'),
+          loading
+        })
+      }
+    ]
+  },
+  {
+    title: '统计分析',
+    path: 'analyze',
+    icon: 'area-chart',
+    children: [
+      {
+        title: '比特币资源',
+        path: '/analyze/btb',
+        component: Loadable({
+          loader: () => import('@/views/userManger/users'),
+          loading
+        })
+      }
+    ]
+  },
+  {
+    title: '交易记录',
+    path: 'hostory',
+    icon: 'sketch',
+    children: [
+      {
+        title: '昨日交易记录',
+        path: '/hostory/btb',
+        component: Loadable({
+          loader: () => import('@/views/userManger/users'),
           loading
         })
       }
