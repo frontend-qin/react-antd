@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[13],{936:function(e,n,o){"use strict";o.r(n);var s=o(1),t=o.n(s);n.default=(()=>t.a.createElement("div",{__source:{fileName:"C:\\Users\\11\\Desktop\\react-antd-admin\\src\\components\\not_found\\index.js",lineNumber:3},__self:void 0},"not found 404"))}}]);
+//# sourceMappingURL=13.273b8462.chunk.js.map

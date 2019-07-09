@@ -18,6 +18,24 @@ export const routeList = [
       {
         title: '交易权限',
         path: '/user/purview'
+      },
+      {
+        title: '用户资源',
+        path: '/user/source'
+      }
+    ]
+  },
+  {
+    title: '虚拟货币管理',
+    icon: 'slack',
+    children: [
+      {
+        title: '数字货币',
+        path: '/currency/create'
+      },
+      {
+        title: '虚拟币权限',
+        path: '/currency/authority'
       }
     ]
   },
@@ -42,6 +60,10 @@ export const routeList = [
       {
         title: '虚拟货币收益',
         path: '/analyze/btIncome'
+      },
+      {
+        title: '虚拟货币市值',
+        path: '/analyze/marketValue'
       }
     ]
   },

@@ -11,7 +11,7 @@
 
 // 加阴影
 .ant-tabs-nav-container {
-  box-shadow: 0px 2px 9px #ccc;
+  // box-shadow: 0px 2px 9px #ccc;
 }
 .ant-tabs-bar {
   margin: 0;
@@ -20,7 +20,7 @@
   margin: 0;
 }
 .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab {
-  background-color: #fff !important;
+  background-color: @3f !important;
 }
 // 选中的状态
 .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab-active {
@@ -29,6 +29,12 @@
 }
 .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab .ant-tabs-close-x {
   color: #666;
+}
+.ant-tabs.ant-tabs-card
+  .ant-tabs-card-bar
+  .ant-tabs-tab
+  .ant-tabs-close-x:hover {
+  color: #fff;
 }
 .ant-tabs-nav-scroll {
   background-color: #fcfcfc;

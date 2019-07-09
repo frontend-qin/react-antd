@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[14],{934:function(e,s,n){"use strict";n.r(s);var a=n(1),i=n.n(a);s.default=(()=>i.a.createElement("div",{className:"common",__source:{fileName:"C:\\Users\\11\\Desktop\\react-antd-admin\\src\\views\\recording\\yestodayTrand\\index.js",lineNumber:2},__self:void 0},"\u6628\u65e5\u6536\u76ca"))}}]);
-//# sourceMappingURL=14.d6f658ee.chunk.js.map

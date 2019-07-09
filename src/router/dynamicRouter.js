@@ -24,6 +24,7 @@ export const routerList = [
       loading
     })
   },
+  // 角色管理模块
   {
     path: '/user/addUser',
     component: Loadable({
@@ -39,6 +40,14 @@ export const routerList = [
     })
   },
   {
+    path: '/user/source',
+    component: Loadable({
+      loader: () => import('../views/userManger/userSource'),
+      loading
+    })
+  },
+  // 资源管理
+  {
     path: '/source/btb',
     component: Loadable({
       loader: () => import('../views/sourceManager/bitebi'),
@@ -52,6 +61,29 @@ export const routerList = [
       loading
     })
   },
+
+  {
+    path: '/record/yestodayTrande',
+    component: Loadable({
+      loader: () => import('../views/recording/yestodayTrand'),
+      loading
+    })
+  },
+  {
+    path: '/currency/create',
+    component: Loadable({
+      loader: () => import('../views/virtualCurrency/createCurrency'),
+      loading
+    })
+  },
+  {
+    path: '/currency/authority',
+    component: Loadable({
+      loader: () => import('../views/virtualCurrency/authorityCurrency'),
+      loading
+    })
+  },
+  //统计分析--- start
   {
     path: '/analyze/btIncome',
     component: Loadable({
@@ -60,9 +92,9 @@ export const routerList = [
     })
   },
   {
-    path: '/record/yestodayTrande',
+    path: '/analyze/marketValue',
     component: Loadable({
-      loader: () => import('../views/recording/yestodayTrand'),
+      loader: () => import('../views/analysis/market_value'),
       loading
     })
   }
