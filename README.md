@@ -1,7 +1,7 @@
 ## 数字货币后台系统
 
 <p align="center">
-  <img width="900" src="./src/images/admin.jpg">
+  <img width="900" src="./src/images/demo.jpg">
 </p>
 
 ## 技术选择
