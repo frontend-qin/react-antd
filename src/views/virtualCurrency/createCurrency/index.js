@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react'
-import { Form, Button, Input, Select, Card } from 'antd'
+import { Form, Button, Select, Card } from 'antd'
 import './index.less'
 const { Option } = Select
 class purviewForm extends PureComponent {
