@@ -41,7 +41,7 @@ const SideBar = props => {
   const { collSpan, menuHandleClick, path } = props
 
   return (
-    <div>
+    <div className="sidebar_box">
       {/* 顶部logo */}
       <div
         className="logo"

@@ -4,7 +4,8 @@
 }
 .logo {
   height: 64px;
-  background-color: @navcolor;
+  // background-color: @navcolor;
+  background-color: rgba(0, 0, 0, 0.82);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,17 +24,24 @@
     }
   }
 }
+.sidebar_box {
+  background: url('./../../images/sidebar3.jpg') no-repeat;
+  background-size: 150% 100%;
+}
 .ant-layout-sider {
-  background-color: @navcolor !important;
+  // background-color: @navcolor !important;
+  // background-color: @3f !important;
+  background-color: rgba(0, 0, 0, 0.4);
   .ant-menu-light {
-    background-color: @navcolor;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: calc(100vh - 64px);
     a {
       color: rgba(255, 255, 255, 0.7);
     }
   }
 }
 .ant-menu-submenu > .ant-menu {
-  background-color: rgba(0, 0, 0, 0.9) !important;
+  background-color: rgba(0, 0, 0, 0.4) !important;
 }
 
 .ant-menu-submenu-title:hover {
